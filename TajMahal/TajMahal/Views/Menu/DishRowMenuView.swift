@@ -20,7 +20,7 @@ struct DishRowView: View {
 }
 
 #Preview {
-    DishRowView(dish: Dish(name: "Samossa", description: "Samossa", allergens: "Samossa", ingredients: "Samossa", spiceLevel: .light, imageName:"Samosas"))
+    DishRowView(dish: Dish(name: "Samossa", description: "Samossa", allergens: "Samossa", ingredients: "Samossa", spiceLevel: .light, imageName:"Samosas", price: 12))
 }
 
 struct DishRowImage: View {
@@ -45,7 +45,7 @@ struct DishRowDescription: View {
                 .font(.custom("Plus Jakarta Sans", size: 12))
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             HStack {
-                Text("12 €")
+                Text("\(dish.price, specifier: "%.2f")€")
                     .font(.custom("Plus Jakarta Sans", size: 12))
                     .fontWeight(.semibold)
                 Spacer()

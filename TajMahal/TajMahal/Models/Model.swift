@@ -23,6 +23,7 @@ struct Dish: Identifiable {
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+    var price: Double
 }
 
 // Représente l'objet "ligne d'information" qui est utilisé pour la page accueil
