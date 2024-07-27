@@ -42,6 +42,6 @@ struct ViewModel {
         Menu(sectionTitle: "Entrées", listSectionDishes: apetizerArray),
         Menu(sectionTitle: "Plats principaux", listSectionDishes: mainCourseArray)
         ]
-        
+
     }
 }

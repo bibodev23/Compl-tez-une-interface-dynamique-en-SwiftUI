@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B01D6532C514AFD0067FC72 /* SpiceLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01D6522C514AFD0067FC72 /* SpiceLevelView.swift */; };
+		3B01D6562C5199A10067FC72 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01D6552C5199A10067FC72 /* DishDetailView.swift */; };
+		3B65692C2C54EE5B007C8FD2 /* SectionInfoDishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65692B2C54EE5B007C8FD2 /* SectionInfoDishView.swift */; };
+		3B65692E2C54EEB4007C8FD2 /* ImageDishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65692D2C54EEB4007C8FD2 /* ImageDishDetailView.swift */; };
+		3B6569302C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65692F2C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift */; };
+		3B6569322C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */; };
+		3B6569342C54F15D007C8FD2 /* MainImageWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */; };
+		3B6569362C54F193007C8FD2 /* ButtonWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */; };
 		3BECA5822C4FA4A500CCCA09 /* SectionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECA5812C4FA4A500CCCA09 /* SectionMenuView.swift */; };
 		3BECA5842C4FA54600CCCA09 /* DishRowMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECA5832C4FA54600CCCA09 /* DishRowMenuView.swift */; };
 		3BF1218A2C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF121892C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf */; };
@@ -22,6 +29,13 @@
 
 /* Begin PBXFileReference section */
 		3B01D6522C514AFD0067FC72 /* SpiceLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelView.swift; sourceTree = "<group>"; };
+		3B01D6552C5199A10067FC72 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		3B65692B2C54EE5B007C8FD2 /* SectionInfoDishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionInfoDishView.swift; sourceTree = "<group>"; };
+		3B65692D2C54EEB4007C8FD2 /* ImageDishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDishDetailView.swift; sourceTree = "<group>"; };
+		3B65692F2C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoWelcomeView.swift; sourceTree = "<group>"; };
+		3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTitleWelcomeView.swift; sourceTree = "<group>"; };
+		3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageWelcomeView.swift; sourceTree = "<group>"; };
+		3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWelcomeView.swift; sourceTree = "<group>"; };
 		3BECA5812C4FA4A500CCCA09 /* SectionMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMenuView.swift; sourceTree = "<group>"; };
 		3BECA5832C4FA54600CCCA09 /* DishRowMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRowMenuView.swift; sourceTree = "<group>"; };
 		3BF121892C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -55,6 +69,16 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		3B01D6542C5199860067FC72 /* Dish */ = {
+			isa = PBXGroup;
+			children = (
+				3B01D6552C5199A10067FC72 /* DishDetailView.swift */,
+				3B65692B2C54EE5B007C8FD2 /* SectionInfoDishView.swift */,
+				3B65692D2C54EEB4007C8FD2 /* ImageDishDetailView.swift */,
+			);
+			path = Dish;
+			sourceTree = "<group>";
+		};
 		3B524D9B2C4307860042FDBC /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
+				3B65692F2C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift */,
+				3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */,
+				3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */,
+				3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -142,6 +170,7 @@
 				3B01D6512C514AE60067FC72 /* Common */,
 				3BD949512C4FA2BC00D0F7A1 /* Welcome */,
 				3BD949502C4FA2B200D0F7A1 /* Menu */,
+				3B01D6542C5199860067FC72 /* Dish */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,12 +247,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				3B65692C2C54EE5B007C8FD2 /* SectionInfoDishView.swift in Sources */,
+				3B6569302C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				3B6569362C54F193007C8FD2 /* ButtonWelcomeView.swift in Sources */,
 				3BECA5842C4FA54600CCCA09 /* DishRowMenuView.swift in Sources */,
+				3B01D6562C5199A10067FC72 /* DishDetailView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				3B65692E2C54EEB4007C8FD2 /* ImageDishDetailView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
+				3B6569322C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift in Sources */,
 				3B01D6532C514AFD0067FC72 /* SpiceLevelView.swift in Sources */,
+				3B6569342C54F15D007C8FD2 /* MainImageWelcomeView.swift in Sources */,
 				3BECA5822C4FA4A500CCCA09 /* SectionMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

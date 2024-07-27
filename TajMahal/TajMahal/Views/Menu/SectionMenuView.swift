@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+//Section d'un menu appelée dans MenuView
 struct SectionMenuView: View {
     let menus: [Menu]
     var body: some View {
@@ -17,7 +17,7 @@ struct SectionMenuView: View {
                     ForEach(menu.listSectionDishes, id: \.name) {dish in
                         ZStack {
                             DishRowView(dish: dish)
-                            NavigationLink(destination: WelcomeView()) {
+                            NavigationLink(destination: DishDetailView(dish: dish)) {
                                 //
                             }.opacity(0)
                         }

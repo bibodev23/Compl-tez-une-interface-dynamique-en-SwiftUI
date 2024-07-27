@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Ligne d'un plat appelée dans les différentes sections pour représenté la liste des plats
 struct DishRowView: View {
     let dish: Dish
     var body: some View {
@@ -14,7 +15,7 @@ struct DishRowView: View {
             DishRowImage(dishImageName: dish.imageName)
             DishRowDescription(dish: dish)
         }
-        .foregroundStyle(Color("GreyText"))
+        .foregroundStyle(Color("GrayText"))
     }
 }
 
