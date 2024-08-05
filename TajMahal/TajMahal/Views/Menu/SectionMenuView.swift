@@ -12,8 +12,10 @@ struct SectionMenuView: View {
     let menus: [Menu]
     var body: some View {
         List {
+            // Accès à la liste des menus
             ForEach(menus, id: \.id) { menu in
                 Section {
+                    // Accès à la liste de plat de chaque menu
                     ForEach(menu.listSectionDishes, id: \.name) {dish in
                         ZStack {
                             DishRowView(dish: dish)
@@ -24,20 +26,22 @@ struct SectionMenuView: View {
                     }
                 } header: {
                     Text(menu.sectionTitle)
-                        .font(.custom("Plus Jakarta Sans", size: 14))
-                        .bold()
+                        .font(CustomFont.titleSection)
                         .textCase(.none)
-                        .padding(.leading, -20)
-                        .padding(.bottom, 12)
+                        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        .padding(.bottom)
                 }
             }
         }
-        .listRowSpacing(12)
+        .listRowSeparator(.hidden)
+        .listRowSpacing(10)
+        .background(Color("GrayBackground"))
     }
 }
 
-let viewModel = ViewModel()
-
 #Preview {
-    SectionMenuView(menus: viewModel.listMenu)
+    NavigationStack {
+        SectionMenuView(menus: ViewModel().listMenu)
+    }
+    
 }

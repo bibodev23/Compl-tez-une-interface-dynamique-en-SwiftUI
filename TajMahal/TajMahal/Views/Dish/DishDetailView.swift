@@ -9,27 +9,24 @@ import SwiftUI
 
 // Page signle d'un plat
 struct DishDetailView: View {
+    @Environment(\.dismiss) var dismiss
     let dish: Dish
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 35) {
+        ScrollView {
+            VStack {
                 ImageDishDetailView(dish: dish)
                 InfoDishDetailView(dish: dish)
             }
             .padding()
+            .navigationTitle(dish.name).font(CustomFont.title)
             .navigationBarBackButtonHidden()
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink {
-                        MenuView()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                            .foregroundStyle(.black)
-                        Text(dish.name)
-                            .font(.system(size: 18, weight: .bold))
-                            .foregroundStyle(Color("DarkGrayText"))
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Label("Back", systemImage: "chevron.left").tint(.black)
                     }
-                    .padding(.bottom)
                 }
             }
         }
@@ -37,7 +34,10 @@ struct DishDetailView: View {
 }
 
 #Preview {
-    DishDetailView(dish: Dish(name: "Samosas aux légumes", description: "Délicieux chaussons frits garnis de légumes épicés", allergens: "Farine de blé", ingredients: "Mélange de légumes (pommes de terre, petits pois, carottes), épices indiennes, pâte à samosa, huile", spiceLevel: .light, imageName: "Samosas", price: 12))
+    NavigationStack {
+        DishDetailView(dish: Dish(name: "Samosas aux légumes", description: "Délicieux chaussons frits garnis de légumes épicés", allergens: "Farine de blé", ingredients: "Mélange de légumes (pommes de terre, petits pois, carottes), épices indiennes, pâte à samosa, huile", spiceLevel: .light, imageName: "Tikka Masala", price: 12))
+    }
+    
 }
 
 

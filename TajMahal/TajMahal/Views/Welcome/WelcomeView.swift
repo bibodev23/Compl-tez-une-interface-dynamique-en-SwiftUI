@@ -21,8 +21,8 @@ struct WelcomeView: View {
                 ButtonWelcomeView()
             }
             .padding()
-            .navigationBarBackButtonHidden(true)
         }
+        .tint(.black)
     }
 }
 

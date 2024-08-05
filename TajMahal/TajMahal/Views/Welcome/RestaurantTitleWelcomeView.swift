@@ -12,10 +12,10 @@ struct RestaurantTitleWelcomeView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Restaurant Indien")
-                    .font(.custom("Plus Jakarta Sans", size: 12))
+                    .font(CustomFont.body)
                     .foregroundStyle(Color("GrayText"))
                 Text("Taj Mahal")
-                    .font(.custom("Plus Jakarta Sans", size: 18))
+                    .font(CustomFont.title)
                     .fontWeight(.bold)
             }
             Spacer()

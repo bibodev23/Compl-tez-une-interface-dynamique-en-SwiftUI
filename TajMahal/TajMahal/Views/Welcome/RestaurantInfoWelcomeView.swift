@@ -33,7 +33,7 @@ struct RestaurantInfoWelcomeView: View {
                 InfoRowView(image: info.imageName, mainInfo: info.mainInfo, addInfo: info.secondInfo)
             }
         }
-        .font(.custom("Plus Jakarta Sans", size: 12))
+        .font(CustomFont.body)
         .fontWeight(.semibold)
         .foregroundStyle(Color("GrayText"))
     }

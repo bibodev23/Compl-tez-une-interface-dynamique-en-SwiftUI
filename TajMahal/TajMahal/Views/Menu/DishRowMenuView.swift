@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// Ligne d'un plat appelée dans les différentes sections pour représenté la liste des plats
+// Ligne d'un plat appelée dans les différentes sections pour représenter la liste des plats
 struct DishRowView: View {
     let dish: Dish
     var body: some View {
@@ -15,7 +15,6 @@ struct DishRowView: View {
             DishRowImage(dishImageName: dish.imageName)
             DishRowDescription(dish: dish)
         }
-        .foregroundStyle(Color("GrayText"))
     }
 }
 
@@ -39,14 +38,14 @@ struct DishRowDescription: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(dish.name)
-                .font(.custom("Plus Jakarta Sans", size: 14))
+                .font(CustomFont.titleDishRow)
                 .fontWeight(.semibold)
             Text(dish.description)
-                .font(.custom("Plus Jakarta Sans", size: 12))
+                .font(CustomFont.body)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             HStack {
                 Text("\(dish.price, specifier: "%.2f")€")
-                    .font(.custom("Plus Jakarta Sans", size: 12))
+                    .font(CustomFont.priceDishRow)
                     .fontWeight(.semibold)
                 Spacer()
                 SpiceLevelView(dish: dish)

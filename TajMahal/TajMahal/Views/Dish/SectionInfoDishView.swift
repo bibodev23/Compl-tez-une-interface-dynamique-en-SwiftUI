@@ -24,9 +24,13 @@ struct InfoDishDetailView: View {
                 Text(dish.ingredients)
             }
         }
-        .font(.custom("Plus Jakarta Sans", size: 12))
+        .font(CustomFont.body)
         .foregroundStyle(Color("GrayText"))
         .multilineTextAlignment(.leading)
     }
 }
 
+
+#Preview {
+    InfoDishDetailView(dish: ViewModel().apetizerArray[0])
+}

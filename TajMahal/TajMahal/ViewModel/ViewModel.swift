@@ -37,7 +37,7 @@ struct ViewModel {
          InfoRestaurantRow(imageName: "globe", mainInfo: "www.tajmahal.fr"),
          InfoRestaurantRow(imageName: "phone", mainInfo: "06 12 34 56 78")]
         
-        // Stocke les deux types de menu
+        // Stocke les deux types de plats pour les deux sections dans MenuView
         self.listMenu = [
         Menu(sectionTitle: "Entrées", listSectionDishes: apetizerArray),
         Menu(sectionTitle: "Plats principaux", listSectionDishes: mainCourseArray)

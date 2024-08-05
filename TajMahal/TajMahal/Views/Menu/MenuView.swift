@@ -6,36 +6,33 @@
 //
 
 import SwiftUI
-
 // Menu sous forme de liste
 struct MenuView: View {
+    @Environment(\.dismiss) var dismiss
     // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     let viewModel = ViewModel()
-    
     var body: some View {
-        NavigationStack {
-            VStack {
-                SectionMenuView(menus: viewModel.listMenu)
-            }
-            .navigationTitle("Menu").font(.custom("Plus Jakarta Sans", size: 18))
-            .background(Color("GrayBackground"))
+        SectionMenuView(menus: viewModel.listMenu)
+            .foregroundStyle(Color("GrayText"))
+            .navigationTitle("Menu").font(CustomFont.title)
             .navigationBarBackButtonHidden()
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink {
-                        WelcomeView()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                            .foregroundStyle(.black)
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Label("Back", systemImage: "chevron.left").tint(.black)
                     }
                 }
             }
-        }
     }
 }
 
 #Preview {
-    MenuView()
+    NavigationStack {
+        MenuView()
+    }
+    
 }
 
 

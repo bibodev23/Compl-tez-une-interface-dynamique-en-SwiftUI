@@ -15,6 +15,7 @@
 		3B6569322C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */; };
 		3B6569342C54F15D007C8FD2 /* MainImageWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */; };
 		3B6569362C54F193007C8FD2 /* ButtonWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */; };
+		3BE909152C59235100EFB6D2 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE909142C59235100EFB6D2 /* CustomFont.swift */; };
 		3BECA5822C4FA4A500CCCA09 /* SectionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECA5812C4FA4A500CCCA09 /* SectionMenuView.swift */; };
 		3BECA5842C4FA54600CCCA09 /* DishRowMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECA5832C4FA54600CCCA09 /* DishRowMenuView.swift */; };
 		3BF1218A2C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF121892C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf */; };
@@ -36,6 +37,7 @@
 		3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTitleWelcomeView.swift; sourceTree = "<group>"; };
 		3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageWelcomeView.swift; sourceTree = "<group>"; };
 		3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWelcomeView.swift; sourceTree = "<group>"; };
+		3BE909142C59235100EFB6D2 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		3BECA5812C4FA4A500CCCA09 /* SectionMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMenuView.swift; sourceTree = "<group>"; };
 		3BECA5832C4FA54600CCCA09 /* DishRowMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRowMenuView.swift; sourceTree = "<group>"; };
 		3BF121892C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -109,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
-				3B65692F2C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift */,
 				3B6569312C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift */,
+				3B65692F2C54F0AC007C8FD2 /* RestaurantInfoWelcomeView.swift */,
 				3B6569332C54F15D007C8FD2 /* MainImageWelcomeView.swift */,
 				3B6569352C54F193007C8FD2 /* ButtonWelcomeView.swift */,
 			);
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF121892C46EF8700F1D3FB /* PlusJakartaSans-VariableFont_wght.ttf */,
+				3BE909142C59235100EFB6D2 /* CustomFont.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 				3B6569322C54F0FD007C8FD2 /* RestaurantTitleWelcomeView.swift in Sources */,
 				3B01D6532C514AFD0067FC72 /* SpiceLevelView.swift in Sources */,
+				3BE909152C59235100EFB6D2 /* CustomFont.swift in Sources */,
 				3B6569342C54F15D007C8FD2 /* MainImageWelcomeView.swift in Sources */,
 				3BECA5822C4FA4A500CCCA09 /* SectionMenuView.swift in Sources */,
 			);

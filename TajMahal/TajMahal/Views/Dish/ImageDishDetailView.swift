@@ -20,5 +20,6 @@ struct ImageDishDetailView: View {
                 .background(RoundedRectangle(cornerRadius: 100).fill(.white))
                 .padding()
         }
+        .padding(.bottom)
     }
 }
